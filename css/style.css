@@ -1,0 +1,334 @@
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background: #171717;
+	color: white;
+	margin: 0 auto;
+	width: 95%;
+}
+
+@media (max-width: 800px){
+	body{
+		background: #171717;
+		color: white;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.header{
+		height: 20vh;
+		background: black;
+	}
+}
+
+p{
+	font-family: "Indie Flower", cursive;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+#hello-intro{
+	display: flex;
+	padding-top: 20px;
+	font-size: 2em;
+	opacity: 0.4;
+	text-shadow: 1px 1px black;
+}
+
+/* +++++ CONTAINERS ++++++ */
+
+.container2, .container3, .container4{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.container2{
+	border: 1px solid black;
+	justify-content: space-between;
+	background-image: url("img/smoke.png");
+}
+
+.container3{
+	justify-content: space-between;
+}
+
+section h2{
+	text-align: center;
+	font-size: 25px;
+	font-family: "Indie Flower", cursive;
+}
+
+
+hr{
+	width:100%;
+	opacity: 0.2;
+}
+
+li{
+	list-style-type: none;
+}
+
+/* +++++ HEADER/NAV ++++++ */
+
+.header{
+	height: 14vh;
+	background: black;
+	position: fixed;
+	width: 95%;
+	z-index: 1;
+}
+
+.header > div{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+.header h1{
+	font-family: "Indie Flower", cursive; 
+	position: relative;
+	left: 40px;
+	animation-name: animate-logo;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+@keyframes animate-logo{
+	0%{left: 0px; visibility: hidden;}
+	25%{left: 10px; visibility: visible;}
+	50%{left: 20px;}
+	75%{left: 30px;}
+	100%{left: 40px;}
+}
+
+.header ul{
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.header ul li{
+	float: right;
+	margin-left: 10px;
+	font-family: "Indie Flower", cursive; 
+	font-size: 26px;
+}
+
+@media (max-width: 800px){
+	.header ul li{
+		float: right;
+		margin-left: 10px;
+		font-family: "Indie Flower", cursive; 
+		font-size: 17px;
+	}
+}
+
+.header li{
+	text-decoration: none;
+	color: white;
+	animation-name: menu-animation;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+}
+
+@keyframes menu-animation{
+	0%{opacity:0;}
+	25%{opacity:0.3;}
+	50%{opacity:0.5;}
+	75%{opacity:0.7;}
+	100%{opacity:1;}
+}
+
+.header li:hover{
+	color: grey;
+}
+
+.slider::after{
+	content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+
+.slider:hover:after{
+	width: 100%;
+}
+
+
+/* +++++ ABOUT SECTION ++++++ */
+
+.about{
+	width: 75%;
+	padding-top: 132px;
+	height: 0vh;
+}
+
+.about > hr{
+	margin-top:14px;
+}
+
+.city{
+}
+
+.city > img{
+	width: 100%;
+}
+
+/* +++++ SKILLS SECTION ++++++ */
+
+.skills{
+	background: black;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	padding-top: 75px;
+}
+
+.skill-icons{
+	padding-top: 78px;
+}
+
+.skill-icons > i{
+	padding-right: 25px;
+	filter: grayscale(100%);
+	font-size: 7em;
+}
+
+.skill-icons > i:nth-child(-n+5){
+	padding-bottom: 20px;
+}
+
+.skill-icons > i:hover{
+	filter: grayscale(0%);
+}
+
+@media (max-width: 800px){
+	.skill-icons > i{
+		padding-right: 25px;
+		filter: grayscale(100%);
+		font-size: 5em;
+		margin-top: 10px;
+	}
+}
+
+
+/* +++++ PROJECTS SECTION ++++++ */
+
+.container4{
+	border: 1px solid black;
+}
+
+
+
+.projects{
+	width: 75%;
+	height: 85vh;
+	padding-top: 69px;
+}
+
+.project-row{
+	display: flex;
+	padding-top: 36px;
+	
+}
+
+.project-row > i{
+	padding-top: 125px;
+}
+
+.project-row > div{
+	text-align: center;
+}
+
+.project-row > div img{
+	filter: grayscale(100%);
+	width: 81%;
+	height: 45vh;
+}
+
+.project-row > div img:hover{
+	filter: grayscale(0%);
+}
+
+/* +++++ FOOTER SECTION ++++++ */
+
+.footer{
+}
+
+.footer-row {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 50px;
+	padding-top: 70px;
+	background: black;
+}
+
+
+.footer-row > div{
+	margin: 0 auto;
+
+}
+
+#contact-form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact > h1{
+	font-family: "Indie Flower", cursive;
+	text-align: center;
+}
+
+#contact-form > textarea{
+	width: 313px;
+	height: 40vh;
+	padding: ;
+}
+
+#contact-form input{
+	margin-bottom: 10px;
+	background: black;
+	color: white;
+	font-family: "Indie Flower", cursive; 
+}
+
+.form-row{
+	display: flex;
+}
+
+.form-row > input{
+	margin-left: 10px;
+	width: 43%;
+}
+
+
+#des-input{
+	width: 92%;
+	height: 63px;
+	color: white;
+	background: black;
+}
+
+.social{
+	text-align: center;
+}
+
+.social > i{
+	margin: 20px;
+}
+
+.social > h3{
+	font-family: "Indie Flower", cursive; 
+}
+
+.social > img{
+	height:110px;
+}
