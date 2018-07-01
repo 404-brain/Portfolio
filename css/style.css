@@ -6,7 +6,7 @@ body{
 	background: #171717;
 	color: white;
 	margin: 0 auto;
-	width: 95%;
+	width: 79%;
 }
 
 @media (max-width: 800px){
@@ -23,10 +23,25 @@ body{
 	}
 }
 
+h3{
+	font-family: Georgia, serif;
+	text-shadow: 2px 4px black;
+	font-size: 1em;
+}
+
 p{
 	font-family: "Indie Flower", cursive;
 	letter-spacing: 2px;
 	text-align: center;
+}
+
+p > a{
+	text-decoration: none;
+	color: blue;
+}
+
+p > a:hover{
+	color: white;
 }
 
 #hello-intro{
@@ -49,9 +64,16 @@ p{
 .container2{
 	border: 1px solid black;
 	justify-content: space-between;
-	background-image: url("img/smoke.png");
 }
 
+@media (max-width: 800px){
+	.container2, .container3, .container4{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		height: 110vh;
+	}
+}
 .container3{
 	justify-content: space-between;
 }
@@ -78,7 +100,7 @@ li{
 	height: 14vh;
 	background: black;
 	position: fixed;
-	width: 95%;
+	width: 79%;
 	z-index: 1;
 }
 
@@ -124,6 +146,7 @@ li{
 		font-family: "Indie Flower", cursive; 
 		font-size: 17px;
 	}
+
 }
 
 .header li{
@@ -163,14 +186,70 @@ li{
 
 /* +++++ ABOUT SECTION ++++++ */
 
+#hello{
+    position: relative;
+    font-family: monospace;
+    text-decoration: none;
+    background: #171717;
+    color: white;
+    font-size: 1.5em;
+}
+
+.cursor{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: .5em solid;
+    background: #171717;
+
+    -webkit-animation: typing 12s steps(13, end) infinite,
+        blinking 1s step-end infinite;
+    animation: typing 12s steps(13, end) infinite,
+        blinking 1s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+    from,to { width: 100%; }
+    25% { width: 0; }
+    50% { width: 0; }
+    75% { width: 100%; }
+}
+
+@keyframes typing {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+@-webkit-keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+@keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+@media (max-width: 800px){
+	.about{
+		width: 75%;
+		padding-top: 50px;
+	}
+}
+
 .about{
 	width: 75%;
-	padding-top: 132px;
+	padding-top: 100px;
 	height: 0vh;
 }
 
 .about > hr{
 	margin-top:14px;
+	margin-bottom: 28px;
 }
 
 .city{
@@ -180,6 +259,13 @@ li{
 	width: 100%;
 }
 
+#cloud{
+	opacity: 0.2;
+	position: absolute;
+	top: 170px;
+	height: 68vh;
+}
+
 /* +++++ SKILLS SECTION ++++++ */
 
 .skills{
@@ -187,11 +273,11 @@ li{
 	width: 100%;
 	height: 100vh;
 	text-align: center;
-	padding-top: 75px;
+	padding-top: 17px;
 }
 
 .skill-icons{
-	padding-top: 78px;
+	padding-top: 48px;
 }
 
 .skill-icons > i{
@@ -229,7 +315,8 @@ li{
 .projects{
 	width: 75%;
 	height: 85vh;
-	padding-top: 69px;
+	padding-top: 13px;
+	z-index: 0;
 }
 
 .project-row{
@@ -256,18 +343,54 @@ li{
 	filter: grayscale(0%);
 }
 
+.swiper-container {
+    width: 800px;
+    height: 80vh;
+}
+
+.slide1-layer, .slide2-layer, .slide3-layer{
+	height: 11vh;
+	background: black;
+	width: 81%;
+	z-index: 1;
+	opacity: 0.6;
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	left: 59px;
+	right: 0;
+	visibility: hidden;
+}
+
+.swiper-button-next, .swiper-button-prev{
+	filter: grayscale(100%);
+	top: 31%;
+}
+
+.swiper-pagination-bullet-active{
+	background: black;
+}
+
+.slide-info-1{
+
+}
+
+.slide-info-2, .slide-info-3{
+	visibility: hidden;
+}
+
 /* +++++ FOOTER SECTION ++++++ */
 
 .footer{
+	height: 90vh;
+	background: black;
 }
 
 .footer-row {
-	height: 100vh;
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 50px;
 	padding-top: 70px;
-	background: black;
 }
 
 
@@ -331,4 +454,12 @@ li{
 
 .social > img{
 	height:110px;
+}
+
+#copyright{
+	font-size: .7em;
+}
+
+#cloud{
+	width: 80%;
 }
