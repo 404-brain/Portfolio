@@ -2,7 +2,6 @@
 *{
 	box-sizing: border-box;
 }
-
 body{
 	background: #171717;
 	color: white;
@@ -46,6 +45,10 @@ p > a:hover{
 }
 
 #hello-intro{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	padding-top: 20px;
 	font-size: 2em;
@@ -56,6 +59,10 @@ p > a:hover{
 /* +++++ CONTAINERS ++++++ */
 
 .container2, .container3, .container4{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -69,6 +76,10 @@ p > a:hover{
 
 @media (max-width: 800px){
 	.container2, .container3, .container4{
+		display: -webkit-box;
+		display: -moz-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -76,6 +87,7 @@ p > a:hover{
 	}
 }
 .container3{
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 }
 
@@ -106,6 +118,10 @@ li{
 }
 
 .header > div{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
@@ -115,9 +131,20 @@ li{
 	font-family: "Indie Flower", cursive; 
 	position: relative;
 	left: 40px;
-	animation-name: animate-logo;
-	animation-duration: 1s;
-	animation-timing-function: linear;
+	-webkit-animation-name: animate-logo;
+	        animation-name: animate-logo;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+@-webkit-keyframes animate-logo{
+	0%{left: 0px; visibility: hidden;}
+	25%{left: 10px; visibility: visible;}
+	50%{left: 20px;}
+	75%{left: 30px;}
+	100%{left: 40px;}
 }
 
 @keyframes animate-logo{
@@ -157,9 +184,20 @@ li{
 .header li{
 	text-decoration: none;
 	color: white;
-	animation-name: menu-animation;
-	animation-duration: 3s;
-	animation-timing-function: linear;
+	-webkit-animation-name: menu-animation;
+	        animation-name: menu-animation;
+	-webkit-animation-duration: 3s;
+	        animation-duration: 3s;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+@-webkit-keyframes menu-animation{
+	0%{opacity:0;}
+	25%{opacity:0.3;}
+	50%{opacity:0.5;}
+	75%{opacity:0.7;}
+	100%{opacity:1;}
 }
 
 @keyframes menu-animation{
@@ -287,7 +325,8 @@ li{
 
 .skill-icons > i{
 	padding-right: 25px;
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 	font-size: 7em;
 }
 
@@ -296,13 +335,15 @@ li{
 }
 
 .skill-icons > i:hover{
-	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	        filter: grayscale(0%);
 }
 
 @media (max-width: 800px){
 	.skill-icons > i{
 		padding-right: 25px;
-		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		        filter: grayscale(100%);
 		font-size: 5em;
 		margin-top: 10px;
 	}
@@ -325,6 +366,10 @@ li{
 }
 
 .project-row{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	padding-top: 36px;
 	
@@ -339,13 +384,15 @@ li{
 }
 
 .project-row > div img{
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 	width: 81%;
 	height: 45vh;
 }
 
 .project-row > div img:hover{
-	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	        filter: grayscale(0%);
 }
 
 .swiper-container {
@@ -368,7 +415,8 @@ li{
 }
 
 .swiper-button-next, .swiper-button-prev{
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 	top: 31%;
 }
 
@@ -392,7 +440,13 @@ li{
 }
 
 .footer-row {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
 	flex-direction: row;
 	padding-bottom: 50px;
 	padding-top: 70px;
@@ -405,7 +459,13 @@ li{
 }
 
 #contact-form{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
 	flex-direction: column;
 	align-items: center;
 }
@@ -429,6 +489,10 @@ li{
 }
 
 .form-row{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 }
 
