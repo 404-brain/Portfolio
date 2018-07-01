@@ -3,14 +3,17 @@
 <head>
 	<meta charset="utf-8" content="width=device-width, initial-scale=1">
 	<title>Ty Knott</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
 	<!-- Main style -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/swipper.css">
 	<!-- icons style -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	 <!-- font style -->
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<script type="text/javascript" src="js\main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 </head>
 <body>
 
@@ -30,7 +33,7 @@
 		<div class="about">
 			<h2>About</h2>
 			<hr>
-			<span id="hello-intro"></span>
+			<span id="hello">... Hello World!<span class="cursor"></span></span>
 			<br>
 			<p>Welcome to my site, I'm a full stack developer who prides myself on completing the challenges I'm faced with each project I develop. What also makes me enjoy programming is the daily thoughts that flow through my head when figuring out a problem, and always knowing if I keep working at it for hours or somtimes minutes, I will eventually come up with a solution!
 			<br>
@@ -72,23 +75,68 @@
 			<h2>Projects</h2>
 			<hr>
 			<div class="project-row">
-				<i class="fas fa-arrow-circle-left fa-5x project-select"></i>
-				<div id="project1">
-					<a href="https://twittertrendss.herokuapp.com/">	<img src="img/twittertrends.png">
-					</a>
-					<hr>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-				</div>
-				<div id="project2"></div>
-				<div id="project3"></div>
-				<div id="project"></div>
-				<i class="fas fa-arrow-circle-right fa-5x project-select"></i>
+			<!-- Slider main container -->
+			<div class="swiper-container">
+			    <!-- Additional required wrapper -->
+			    <div class="swiper-wrapper">
+			        <!-- Slides -->
+			        <div class="swiper-slide">
+					<a href="https://twittertrendss.herokuapp.com/"><img src="img/twittertrends.png"></a>
+			        	<h3>Twitter Trends</h3>
+			        	<p>Stack: Python 3, Django, Vanilla JS, HTML5/CSS3</p>
+						<p>This site list's the latest trends going on worldwide using the Twitter api.</p>
+						<p><a href="https://twittertrendss.herokuapp.com">View Site</a> | <a href="https://github.com/404-brain/Django-TwitterTrends">Github</a></p>
+			    	</div>
+			        <div class="swiper-slide">
+			        	<a href=""><img src="img/woosah.png"></a>
+			        	<h3>Woosah</h3>
+			        	<p>Stack: HTML5/CSS3, Vanilla JS</p>
+						<p>A site that plays relaxing audio sounds to increase productivity.</p>
+						<p><a href="">View Site</a> | <a href="https://github.com/404-brain/Woosah">Github</a></p>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="https://404-brain.github.io/Agency-mock-theme/"><img src="img/travel-agency.png"></a>
+			        	<h3>Travel Agency Mockup</h3>
+			        	<p>Stack: Materialize.css HTML5/CSS3, JS</p>
+						<p>A mockup of a travel agency site</p>
+						<p><a href="https://404-brain.github.io/Agency-mock-theme/">View Site</a> | <a href="https://github.com/404-brain/Agency-mock-theme">Github</a></p>
+			        </div>
+			    </div>
+			    <!-- If we need pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- If we need navigation buttons -->
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>
+			    <!-- If we need scrollbar -->
+			    <div class="swiper-scrollbar"></div>
 			</div>
+            </div>
 		</div>
-	</section>	
+	</section>
+
+	<script>
+	  var mySwiper = new Swiper ('.swiper-container', {
+	    // Optional parameters
+	    direction: 'horizontal',
+	    loop: true,
+
+	    // If we need pagination
+	    pagination: {
+	      el: '.swiper-pagination',
+	    },
+
+	    // Navigation arrows
+	    navigation: {
+	      nextEl: '.swiper-button-next',
+	      prevEl: '.swiper-button-prev',
+	    },
+
+	    // And if we need scrollbar
+	    scrollbar: {
+	      el: '.swiper-scrollbar',
+	    },
+	  })
+	</script>		
 
 	<footer class="footer">
 		<section class="footer-row">
@@ -111,7 +159,13 @@
 				<i class="fab fa-codepen fa-5x"></i>
 				<i class="fab fa-linkedin fa-5x"></i>
 			</div>
+			<br>
 		</section>
+		<div class="city">
+			<img id="cloud" src="img/cloud.png">
+		</div>
+		
+		<p id="copyright">Website maintained and developed by Ty Knott 2018.</p>
 	</footer>
 	<script type="text/javascript" src="js/hello.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
