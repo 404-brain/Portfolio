@@ -558,4 +558,7 @@ i{
 		height: 125vh;
 		padding-top: none;
 	}
+	#cloud{
+		display:none;
+	}
 }
