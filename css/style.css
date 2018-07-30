@@ -88,9 +88,8 @@ li{
 }
 
 .header-scroll{
-	height: 4px;
-    background: white;
-    opacity: 0.2;
+    height: 5px;
+    background: black;
     position: absolute;
     bottom: -5px;
     -webkit-transition: width ease 2s;
