@@ -87,6 +87,17 @@ li{
 	z-index: 1;
 }
 
+.header-scroll{
+	height: 4px;
+    background: white;
+    opacity: 0.2;
+    position: absolute;
+    bottom: -5px;
+    -webkit-transition: width ease 2s;
+    -moz-transition: width ease 2s;
+    transition: width ease 1s;
+}
+
 .header > div{
 	display: -webkit-box;
 	display: -moz-box;
@@ -266,8 +277,11 @@ i{
 	margin: 10px;
 }
 
-.skills{
+.container3{
 	background: black;
+}
+
+.skills{
 	width: 100%;
 	height: 128vh;
 	text-align: center;
@@ -478,7 +492,7 @@ i{
 
 /* MEDIA QUERIES */
 
-@media (max-width: 800px){
+@media (max-width: 905px){
 	body{
 		background: #171717;
 		color: white;
@@ -516,6 +530,10 @@ i{
 	    height: 60vh;
 	}
 
+	#cloud{
+		display: none;
+	}
+
 	.about{
 		padding-top: 100px;
 	}
@@ -550,15 +568,5 @@ i{
 
 	.projects{
 		padding-top: 20px;
-	}
-}
-
-@media (max-width: 900px){
-	.skills{
-		height: 125vh;
-		padding-top: none;
-	}
-	#cloud{
-		display:none;
 	}
 }
