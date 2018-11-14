@@ -145,6 +145,7 @@ li{
 	margin-left: 10px;
 	font-family: "Indie Flower", cursive; 
 	font-size: 26px;
+	cursor: pointer;
 }
 
 .header li{
@@ -501,6 +502,7 @@ i{
 		width: 100%;
 	}
 
+	/* +++++ HEADER/NAV BAR SECTION ++++++ */
 	.header{
 		width: 100%;
 	}
@@ -539,6 +541,7 @@ i{
 		padding-top: 100px;
 	}
 
+	/* +++++ SKILLS SECTION ++++++ */
 	.skills{
 		height: 135vh;
 		padding-top: none;
@@ -553,6 +556,7 @@ i{
 		line-height: 100px;
 	}
 
+	/* +++++ PROJECT SECTION ++++++ */
 	.project-row > div img{
 		height: 40vh;
 	}
@@ -630,7 +634,8 @@ i{
 	}
 
 	p{
-		font-size: 0.9em;
+		font-size: 1.1em;
+    	line-height: 32px;
 	}
 
 	.footer {
@@ -649,6 +654,7 @@ i{
 	}
 	p{
 		font-size: 15px;
+    	line-height: 20px;
 	}
 
 	.skill-icons > i {
@@ -674,7 +680,8 @@ i{
 		margin: auto;
 	}
 	p{
-		font-size: 15px;
+    	font-size: 15px;
+    	line-height: 25px;
 	}
 
 	.skill-icons > i {
@@ -740,6 +747,7 @@ i{
 
 	p{
 		font-size: 2.1em;
+		line-height: 57px;
 	}
 
 	.skill-icons > i {
