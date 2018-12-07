@@ -107,6 +107,7 @@ li{
 	flex-direction: row;
 }
 
+/* 'Ty Knott' Animation */
 .header h1{
 	font-family: "Indie Flower", cursive; 
 	position: relative;
@@ -134,6 +135,7 @@ li{
 	75%{left: 30px;}
 	100%{left: 40px;}
 }
+/* ============= ================*/
 
 .header ul{
 	margin-left: auto;
@@ -148,6 +150,7 @@ li{
 	cursor: pointer;
 }
 
+/*	Fade in  */
 .header li{
 	text-decoration: none;
 	color: white;
@@ -174,6 +177,8 @@ li{
 	75%{opacity:0.7;}
 	100%{opacity:1;}
 }
+/* ============= ================*/
+
 
 .header li:hover, 
 .header li:focus{
@@ -217,7 +222,6 @@ li{
     -webkit-box-sizing: border-box;
     border-left: .5em solid;
     background: #171717;
-
     -webkit-animation: typing 6s steps(13, end) infinite,
         blinking 1s step-end infinite;
     animation: typing 6s steps(13, end) infinite,
@@ -645,6 +649,15 @@ i{
 	.social > a {
 	    margin: 0;
 	}
+
+	.slider::after{
+    	transition: none;
+	}
+
+	.slider:hover:after,
+	.slider:focus:after{
+		width: 0;
+	}
 }
 
 @media screen and (device-width:320px){
@@ -757,6 +770,6 @@ i{
 
 	#copyright{
 		font-size: 2.3em;
-    	padding-top: 121px;
+    		padding-top: 121px;
 	}
 }
