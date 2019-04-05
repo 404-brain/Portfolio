@@ -23,7 +23,7 @@ p{
 
 p > a{
 	text-decoration: none;
-	color: blue;
+	color: cornflowerblue;
 }
 
 p > a:hover{
@@ -489,6 +489,10 @@ i{
 	font-family: "Indie Flower", cursive; 
 }
 
+#resume > img{
+	height: 95px;
+}
+
 #copyright{
 	font-size: .7em;
 }
@@ -769,7 +773,7 @@ i{
 	}
 
 	#copyright{
-		font-size: 2.3em;
-    		padding-top: 121px;
+	    font-size: 2.3em;
+    	    padding-top: 121px;
 	}
 }
