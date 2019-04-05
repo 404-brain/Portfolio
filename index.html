@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta property="og:title" content="Ty Knott"/>
     <meta property="og:url" content="/"/>
-    <meta property="og:description" content=" full stack web developer"/>
+    <meta property="og:description" content="full stack web developer"/>
 	<title>Ty Knott</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
 	<!-- Main style -->
@@ -17,11 +17,11 @@
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	 <!-- font style -->
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-	<script type="text/javascript" src="js\main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 </head>
 <body>
 
+	<!-- NAV BAR AREA -->
 	<header class="header">
 		<div>
 			<h1>Ty Knott</h1>
@@ -35,7 +35,7 @@
 		<span class="header-scroll"></span>
 	</header>
 
-
+	<!-- ABOUT AREA -->
 	<section class="container2">
 		<div class="about">
 			<h2>About</h2>
@@ -52,6 +52,7 @@
 		</div>	
 	</section>
 
+	<!-- SKILLS AREA -->
 	<section class="container3">
 		<div class="skills">
 			<h2>Skills</h2>
@@ -73,6 +74,7 @@
 		</div>
 	</section>
 
+	<!-- PROJECTS AREA -->
 	<section class="container4">
 		<div class="projects">
 			<h2>Projects</h2>
@@ -84,7 +86,7 @@
 			    <div class="swiper-wrapper">
 			        <!-- Slides -->
 			        <div class="swiper-slide">
-					<a href="https://twittertrendss.herokuapp.com/"><img src="img/twittertrends.png"></a>
+					<a href="https://twittertrendss.herokuapp.com/" target="_blank"><img src="img/twittertrends.png"></a>
 			        	<h3>Twitter Trends</h3>
 			        	<p>Stack: Python 3, Django, Vanilla JS, HTML5/CSS3</p>
 						<p>Web app that list's the latest trends going on worldwide using the Twitter api.</p>
@@ -98,13 +100,21 @@
 						<p><a href="https://tyknot.github.io/Woosah/" target="_blank">View Site</a> | <a href="https://github.com/tyknot/Woosah" target="_blank">Github</a></p>
 			        </div>
 			        <div class="swiper-slide">
-			        	<a href="https://tyknot.github.io/Agency-mock-theme/" target="_blank"><img src="img/travel-agency.png"></a>
-			        	<h3>Travel Agency Mockup</h3>
-			        	<p>Stack: Materialize.css HTML5/CSS3, JS</p>
-						<p>A mockup of a travel agency site.</p>
-						<p><a href="https://tyknot.github.io/Agency-mock-theme/" target="_blank">View Site</a> | <a href="https://github.com/tyknot/Agency-mock-theme" target="_blank">Github</a></p>
+			        	<a href="http://getstrumentals.herokuapp.com/" target="_blank"><img src="img/getstrumentals.png"></a>
+			        	<h3>Scraped Hip Hop Instrumentals</h3>
+			        	<p>Stack: Vue.js/Python/Django/Django Rest Framework/Scrapy/Scrapyd/AWS</p>
+						<p>Scraped hip hop instrumentals saved to db using custom django command and shown client side via restful api.</p>
+						<p><a href="http://getstrumentals.herokuapp.com/" target="_blank">View Site</a></p>
+			        </div>
+			         <div class="swiper-slide">
+			        	<a href="https://codepen.io/TyNot/pen/LvpyQX" target="_blank"><img src="img/kramer.png"></a>
+			        	<h3>Asynchronous Seinfeld Quotes</h3>
+			        	<p>Stack: HTML5/CSS3, Vanilla JS</p>
+						<p>Fetching Seinfeld quote data from api using ajax.</p>
+						<p><a href="https://codepen.io/TyNot/pen/LvpyQX" target="_blank">Codepen</a></p>
 			        </div>
 			    </div>
+			    /* project swiper */
 			    <!-- If we need pagination -->
 			    <div class="swiper-pagination"></div>
 			    <!-- If we need navigation buttons -->
@@ -118,7 +128,7 @@
 	</section>
 
 	<script>
-	  var mySwiper = new Swiper ('.swiper-container', {
+	  var mySwiper = new Swiper('.swiper-container', {
 	    // Optional parameters
 	    direction: 'horizontal',
 	    loop: true,
@@ -157,10 +167,10 @@
 				</form> 
 			</div>
 			<div class="social">
-				<h3>Social</h3>
+				<h3>Github | Codepen | Resume</h3>
 				<a href="https://github.com/tyknot" target="_blank"><i class="fab fa-github fa-5x"></i></a>
 				<a href="https://codepen.io/TyNot" target="_blank"><i class="fab fa-codepen fa-5x"></i></a>
-				<a href="" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
+				<a href="https://docs.google.com/document/d/1hJap5ATOfUW7nkyVPCIT57pTMk6fZRQML7pH4-hOm70/export?format=pdf" target="_blank"><i class="far fa-file-alt fa-5x"></i></a>
 			</div>
 			<br>
 		</section>
