@@ -19,6 +19,7 @@ p{
 	font-family: "Indie Flower", cursive;
 	letter-spacing: 2px;
 	text-align: center;
+	font-size: 20px;
 }
 
 p > a{
@@ -723,7 +724,7 @@ i{
 		width: 100%;
 	}
 	p{
-		font-size: 15px;
+		font-size: 14px;
 	}
 }
 
