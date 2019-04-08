@@ -287,13 +287,12 @@ i{
 
 .skills{
 	width: 100%;
-	height: 128vh;
 	text-align: center;
 	padding-top: 17px;
 }
 
 .skill-icons{
-	padding-top: 20px;
+	padding: 20px;
 }
 
 .skill-icons > i{
@@ -773,7 +772,7 @@ i{
 	}
 
 	#copyright{
-	    font-size: 2.3em;
-    	    padding-top: 121px;
+		font-size: 2.3em;
+    	padding-top: 121px;
 	}
 }
